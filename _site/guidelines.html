@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ubiqua Design Guidelines</title>
+  <meta name="description" content="This style guide and guidelines provide the necessary information to designers and front-end developers to create a web application for Ubiqua.
+">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="canonical" href="http://localhost:4000/guidelines.html">
+  <link rel="alternate" type="application/rss+xml" title="Ubiqua Design Guidelines" href="http://localhost:4000/feed.xml">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+    <a class="site-title" href="/"><img src="images/ubiqua-logo.svg" style="padding: 0px;border: none; height: 40px;"></a>
+
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="toc">
+        <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#ubiqua-design-guidelines">Ubiqua design guidelines</a></li>
+<li class="toc-entry toc-h2"><a href="#brand-colors">Brand colors</a></li>
+<li class="toc-entry toc-h2"><a href="#colors-palette">Colors palette</a></li>
+<li class="toc-entry toc-h2"><a href="#status-colors">Status colors</a></li>
+<li class="toc-entry toc-h3"><a href="#usage">Usage</a></li>
+<li class="toc-entry toc-h2"><a href="#paragraphs">Paragraphs</a></li>
+<li class="toc-entry toc-h3"><a href="#specification">Specification</a></li>
+<li class="toc-entry toc-h4"><a href="#variants">Variants</a></li>
+<li class="toc-entry toc-h2"><a href="#headers">Headers</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-1">Specification</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-1">Usage</a></li>
+<li class="toc-entry toc-h2"><a href="#secondary-headers">Secondary Headers</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-2">Specification</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-2">Usage</a></li>
+<li class="toc-entry toc-h2"><a href="#alerts">Alerts</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-3">Specification</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-3">Usage</a></li>
+<li class="toc-entry toc-h2"><a href="#badges">Badges</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-4">Specification</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-4">Usage</a></li>
+<li class="toc-entry toc-h2"><a href="#notifications">Notifications</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-5">Specification</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-5">Usage</a></li>
+<li class="toc-entry toc-h2"><a href="#tooltips">Tooltips</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-6">Specification</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-6">Usage</a></li>
+<li class="toc-entry toc-h2"><a href="#popovers">Popovers</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-7">Specification</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-7">Usage</a></li>
+<li class="toc-entry toc-h2"><a href="#icons">Icons</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-8">Specification</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-8">Usage</a></li>
+<li class="toc-entry toc-h4"><a href="#addition-of-new-icons">Addition of new icons</a></li>
+<li class="toc-entry toc-h3"><a href="#reference">Reference</a></li>
+<li class="toc-entry toc-h2"><a href="#buttons">Buttons</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-9">Specification</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-9">Usage</a></li>
+<li class="toc-entry toc-h3"><a href="#references">References</a></li>
+<li class="toc-entry toc-h2"><a href="#inputs">Inputs</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-10">Specification</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-10">Usage</a></li>
+<li class="toc-entry toc-h3"><a href="#resources">Resources</a></li>
+<li class="toc-entry toc-h2"><a href="#selects">Selects</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-11">Specification</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-11">Usage</a></li>
+<li class="toc-entry toc-h2"><a href="#references-1">References</a></li>
+<li class="toc-entry toc-h2"><a href="#typeahead">Typeahead</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-12">Specification</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-12">Usage</a></li>
+<li class="toc-entry toc-h2"><a href="#textareas">Textareas</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-13">Specification</a></li>
+<li class="toc-entry toc-h4"><a href="#textareas-with-counter">Textareas with counter</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-13">Usage</a></li>
+<li class="toc-entry toc-h2"><a href="#dropdown-menus">Dropdown menus</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-14">Specification</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-14">Usage</a></li>
+<li class="toc-entry toc-h2"><a href="#choices">Choices</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-15">Specification</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-15">Usage</a></li>
+<li class="toc-entry toc-h3"><a href="#references-2">References</a></li>
+<li class="toc-entry toc-h2"><a href="#checkboxes">Checkboxes</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-16">Specification</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-16">Usage</a></li>
+<li class="toc-entry toc-h3"><a href="#references-3">References</a></li>
+<li class="toc-entry toc-h2"><a href="#switches">Switches</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-17">Specification</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-17">Usage</a></li>
+<li class="toc-entry toc-h2"><a href="#button-groups">Button groups</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-18">Specification</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-18">Usage</a></li>
+<li class="toc-entry toc-h2"><a href="#breadcrumbs">Breadcrumbs</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-19">Specification</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-19">Usage</a></li>
+<li class="toc-entry toc-h3"><a href="#references-4">References</a></li>
+<li class="toc-entry toc-h2"><a href="#tabs">Tabs</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-20">Specification</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-20">Usage</a></li>
+<li class="toc-entry toc-h3"><a href="#references-5">References</a></li>
+<li class="toc-entry toc-h2"><a href="#tables">Tables</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-21">Specification</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-21">Usage</a></li>
+<li class="toc-entry toc-h2"><a href="#accordions">Accordions</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-22">Specification</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-22">Usage</a></li>
+<li class="toc-entry toc-h3"><a href="#references-6">References</a></li>
+<li class="toc-entry toc-h1"><a href="#mobile-lists">Mobile lists</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-23">Specification</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-23">Usage</a></li>
+<li class="toc-entry toc-h2"><a href="#modal-windows">Modal windows</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-24">Specification</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-24">Usage</a></li>
+<li class="toc-entry toc-h3"><a href="#references-7">References</a></li>
+<li class="toc-entry toc-h2"><a href="#desktop-header-and-menu">Desktop header and menu</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-25">Specification</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-25">Usage</a></li>
+<li class="toc-entry toc-h2"><a href="#mobile-header-and-menu">Mobile header and menu</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-26">Specification</a></li>
+<li class="toc-entry toc-h4"><a href="#mobile-tabs">Mobile Tabs</a></li>
+<li class="toc-entry toc-h4"><a href="#navigation-bar">Navigation bar</a></li>
+<li class="toc-entry toc-h4"><a href="#static-footer">Static footer</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-26">Usage</a></li>
+<li class="toc-entry toc-h2"><a href="#off-canvas-menu">Off-canvas menu</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-27">Specification</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-27">Usage</a></li>
+<li class="toc-entry toc-h2"><a href="#form-layouts">Form layouts</a></li>
+<li class="toc-entry toc-h4"><a href="#regular-form">Regular form</a></li>
+<li class="toc-entry toc-h4"><a href="#search-form">Search form</a></li>
+<li class="toc-entry toc-h4"><a href="#calculator-forms">Calculator forms</a></li>
+<li class="toc-entry toc-h2"><a href="#form-design-guidelines">Form design guidelines</a></li>
+<li class="toc-entry toc-h4"><a href="#example">Example</a></li>
+<li class="toc-entry toc-h3"><a href="#references-8">References:</a></li>
+<li class="toc-entry toc-h2"><a href="#labeling">Labeling</a></li>
+<li class="toc-entry toc-h2"><a href="#errors">Errors</a></li>
+<li class="toc-entry toc-h3"><a href="#field-validation">Field validation</a></li>
+<li class="toc-entry toc-h3"><a href="#resources-1">Resources</a></li>
+<li class="toc-entry toc-h2"><a href="#full-screen-asynchronous-feedback">Full Screen asynchronous feedback</a></li>
+<li class="toc-entry toc-h3"><a href="#specification-28">Specification</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-28">Usage</a></li>
+<li class="toc-entry toc-h3"><a href="#references-9">References</a></li>
+<li class="toc-entry toc-h2"><a href="#data-process-asynchronous-feedback">Data process asynchronous feedback</a></li>
+<li class="toc-entry toc-h3"><a href="#usage-29">Usage</a></li>
+<li class="toc-entry toc-h3"><a href="#references-10">References</a></li>
+<li class="toc-entry toc-h2"><a href="#examples-and-layouts-of-complete-pages">Examples and layouts of complete pages</a></li>
+<li class="toc-entry toc-h3"><a href="#desktop-login">Desktop login</a></li>
+<li class="toc-entry toc-h4"><a href="#layout">Layout</a></li>
+<li class="toc-entry toc-h4"><a href="#example-1">Example:</a></li>
+<li class="toc-entry toc-h3"><a href="#desktop-search-form">Desktop search form</a></li>
+<li class="toc-entry toc-h4"><a href="#layout-1">Layout</a></li>
+<li class="toc-entry toc-h5"><a href="#example-2">Example:</a></li>
+<li class="toc-entry toc-h3"><a href="#desktop-product">Desktop product</a></li>
+<li class="toc-entry toc-h4"><a href="#layout-2">Layout</a></li>
+<li class="toc-entry toc-h4"><a href="#example-3">Example</a></li>
+<li class="toc-entry toc-h3"><a href="#desktop-modal-window">Desktop modal window</a></li>
+<li class="toc-entry toc-h3"><a href="#mobile-login">Mobile login</a></li>
+<li class="toc-entry toc-h3"><a href="#mobile-product-list">Mobile product list</a></li>
+<li class="toc-entry toc-h3"><a href="#mobile-flow">Mobile flow</a></li>
+</ul>
+        </div>
+        <div class="content">
+          <h1 id="ubiqua-design-guidelines">Ubiqua design guidelines</h1>
+
+<p>These guidelines shall be applied on the design of any web application (mobile or fully responsive).</p>
+
+<p>These guidelines are based on <a href="http://getbootstrap.com">Bootstrap</a>.</p>
+
+<p>Layouts assume a <a href="http://getbootstrap.com/css/#grid">grid system based on 12 columns</a>.</p>
+
+<h2 id="brand-colors">Brand colors</h2>
+
+<p><img src="images/colors/brand.png" alt="" /></p>
+
+<h2 id="colors-palette">Colors palette</h2>
+
+<p><img src="images/colors/palette.png" alt="" /></p>
+
+<h2 id="status-colors">Status colors</h2>
+
+<p><img src="images/colors/result-colors.png" alt="" /></p>
+
+<h3 id="usage">Usage</h3>
+<p>Status colors have a special meaning and shall be used in the interface in the following way:</p>
+
+<ul>
+  <li>
+    <p><strong>Success</strong>: display success results or positive outcomes. Example: something was successfully saved on the database, user successfully signed up or completed a task.</p>
+  </li>
+  <li>
+    <p><strong>Warning</strong>: display a pending status or a warning about a NON BLOCKING event. Non blocking events are those do not prevent the user to continue the regular flow, but there is an special situation that may need to be taken into account.
+Example: A quote is pending to be approved, then the “pending” status can be highlighted using the warning color.</p>
+  </li>
+  <li>
+    <p><strong>Danger/error</strong>: shows a blocking action or an error that does not allow the user to continue the regular flow. Additionally, it is used to activate destructive actions such as delete.</p>
+  </li>
+  <li>
+    <p><strong>Disabled</strong>: Something cannot be used, the status is finished or unavailable.</p>
+  </li>
+  <li>
+    <p><strong>Info</strong>: Informative. Provides additional information. Also used for ongoing statuses. For example: a request is on processing status.</p>
+  </li>
+</ul>
+
+<h2 id="paragraphs">Paragraphs</h2>
+
+<h3 id="specification">Specification</h3>
+<p>Default typography in all texts is <code class="highlighter-rouge">Helvetica</code>. The <code class="highlighter-rouge">line-height</code> is calculated multiplying the
+<code class="highlighter-rouge">font-size x 1.42857</code>, therefore the default line-height is <code class="highlighter-rouge">14px x 1.42857 ~ 20px</code>.
+Text color is <code class="highlighter-rouge">$text</code>.</p>
+
+<p>These are the default values of texts:
+<img src="images/text/paragraphs.png" alt="" /></p>
+
+<h4 id="variants">Variants</h4>
+<p><img src="images/text/variants.png" alt="" /></p>
+
+<h2 id="headers">Headers</h2>
+<p>Headers set the title for each sections within a page.</p>
+
+<h3 id="specification-1">Specification</h3>
+<p>Headers use the logo typography: <code class="highlighter-rouge">Ubuntu</code>.</p>
+
+<p><img src="images/text/headers.png" alt="" /></p>
+
+<h3 id="usage-1">Usage</h3>
+<ol>
+  <li>Headers are used to set hierarchy of sections within a page.</li>
+  <li><code class="highlighter-rouge">h1</code> is the highest level on the hierarchy, <code class="highlighter-rouge">h6</code> is the lowest.</li>
+  <li>If there is a subsection that belongs to a section, it’s title cannot be of a higher hierarchy.</li>
+  <li>Generally, subsections shall have one degree of hierarchy below its parent.</li>
+</ol>
+
+<p>For example, the section <em>Headers</em> uses <code class="highlighter-rouge">h2</code>, the Specification title cannot be <code class="highlighter-rouge">h1</code>. It should be <code class="highlighter-rouge">h3</code>.</p>
+
+<h2 id="secondary-headers">Secondary Headers</h2>
+<p>Secondary headers set the title of a section that requires lower visual relevance.</p>
+
+<h3 id="specification-2">Specification</h3>
+<p><img src="images/text/secondary-headers.png" alt="" /></p>
+
+<h3 id="usage-2">Usage</h3>
+<p>Same rules described in <em>Headers</em> apply, except one caveat, there is no <code class="highlighter-rouge">h1</code> in secondary headers.</p>
+
+<h2 id="alerts">Alerts</h2>
+
+<p>Alerts are blocks of text that stand out from the rest of the interface.</p>
+
+<h3 id="specification-3">Specification</h3>
+<p><img src="images/text/alerts.png" alt="" /></p>
+
+<p>Also:</p>
+
+<p><img src="images/text/alert-link.png" alt="" /></p>
+
+<p>Alerts can be dismissible:</p>
+
+<p><img src="images/text/alert-dismissable.png" alt="" /></p>
+
+<h3 id="usage-3">Usage</h3>
+<ol>
+  <li>Use alerts when there is an exceptional information that is important to be notified to the user.</li>
+  <li>Do not overuse alerts, as user will learn to ignore them.</li>
+  <li>Do not include more than one or two alerts on the same page at the same time.</li>
+  <li>Alerts are static, but they may be dismissible by the user.</li>
+  <li>Use the result colors guidelines to decide which type of alert display.</li>
+</ol>
+
+<h2 id="badges">Badges</h2>
+
+<h3 id="specification-4">Specification</h3>
+<p><img src="images/text/badges.png" alt="badges" /></p>
+
+<h3 id="usage-4">Usage</h3>
+<ol>
+  <li>Use badges to highlight a number of items or elements that require the inspection of the user or to remark a status.</li>
+  <li>Do not overuse the badges on a page.</li>
+</ol>
+
+<h2 id="notifications">Notifications</h2>
+<p>Notifications are dismissible alerts that appear for a predefined period of time (by default 5 seconds).</p>
+
+<p>There are the same types of notifications as alerts: <code class="highlighter-rouge">notification.notification-info</code>, <code class="highlighter-rouge">notification.notification-success</code>, <code class="highlighter-rouge">notification.notification-warning</code>, <code class="highlighter-rouge">notification.notification-danger</code>.</p>
+
+<p>The main difference between notifications and alerts is the time the message needs visible.</p>
+
+<h3 id="specification-5">Specification</h3>
+<p><img src="images/text/notifications.png" alt="" /></p>
+
+<h3 id="usage-5">Usage</h3>
+<ol>
+  <li>As well as alerts, notifications should not be overused.</li>
+  <li>
+    <p>On desktop, notifications appear under the header + menu of the application on a fixed position.
+  <img src="images/text/notifications-location.png" alt="" /></p>
+  </li>
+  <li>
+    <p>On mobile web applications, notifications shall appear at the top of the screen below the navigation bar. If these notifications slow down the use of the application, they may appear at the bottom of the screen on a fixed position.</p>
+
+    <p><img src="images/text/notifications-location-mobile.png" alt="image" /></p>
+  </li>
+</ol>
+
+<h2 id="tooltips">Tooltips</h2>
+<p>Tooltips are used to provide some clarifying information to the user.</p>
+
+<h3 id="specification-6">Specification</h3>
+<p>Ubiqua tooltips follow the standard definition of bootstrap tooltips, only the <code class="highlighter-rouge">background-color</code> is modified.</p>
+
+<p><img src="images/text/tooltips.png" alt="" /></p>
+
+<h3 id="usage-6">Usage</h3>
+<ol>
+  <li>
+    <p>Because tooltips do not work well on touchable interfaces, do not show information the user needs to know on tooltips. Tooltips should only provide additional clarifying information nice to know (for instance: a keyboard shortcut).</p>
+  </li>
+  <li>
+    <p>By default tooltips appear with <code class="highlighter-rouge">:hover</code> effect and after a delay of 0.3 seconds.</p>
+  </li>
+</ol>
+
+<h2 id="popovers">Popovers</h2>
+<p>Popovers provide contextualized additional information of an item.</p>
+
+<h3 id="specification-7">Specification</h3>
+<p>The arrow of the popover can be in any of the sides (top, bottom, left or right).</p>
+
+<p><img src="images/text/popover.png" alt="" /></p>
+
+<h3 id="usage-7">Usage</h3>
+<ol>
+  <li>Do not use complex structure or long contents on popovers.</li>
+  <li>Display popover only after a click.</li>
+  <li>By default, display the popover on the left of the item. The failover precedence is: right, bottom, left, top.</li>
+</ol>
+
+<h2 id="icons">Icons</h2>
+
+<h3 id="specification-8">Specification</h3>
+
+<p>Ubiqua icons belong to <a href="http://fontawesome.io">Font-Awesome</a>.</p>
+
+<p><img src="images/text/icons.png" alt="" /></p>
+
+<h3 id="usage-8">Usage</h3>
+<ol>
+  <li>Do not use labels different from the one specified above with an icon. That is, each icon has to be accompanied always with the same label.</li>
+  <li>Never use icons alone without a label.</li>
+</ol>
+
+<h4 id="addition-of-new-icons">Addition of new icons</h4>
+<p>In general, Ubiqua interfaces will use only <strong>universal</strong> icons. That is, those that have a familiar metaphor the user recognizes based on his previous experience.</p>
+
+<p>When a new icon is added, apply the 5-second rule: if it takes you more than 5 seconds to think of an appropriate icon for something, it is unlikely that an icon can effectively communicate that meaning.</p>
+
+<h3 id="reference">Reference</h3>
+<ul>
+  <li><a href="https://uxplanet.org/tips-for-using-icons-in-your-app-541a6728e7d4">Tips for using icons in your app</a></li>
+</ul>
+
+<h2 id="buttons">Buttons</h2>
+
+<h3 id="specification-9">Specification</h3>
+
+<p><img src="images/controls/btn-common.png" alt="" /></p>
+
+<p><img src="images/controls/btns.png" alt="" /></p>
+
+<p>Buttons with icons:</p>
+
+<p><img src="images/controls/btns-with-icons.png" alt="" /></p>
+
+<h3 id="usage-9">Usage</h3>
+
+<ol>
+  <li>Primary buttons activate the action that allows the user to continue the flow. For example, in a form, the submit button. Default buttons handle the remaining actions.</li>
+  <li>There can be only one primary button per form.</li>
+  <li>The precedence of the buttons from left to right is: from least important option to most important option.  Therefore, primary buttons appear always on the right. For example, in a typical form, there should be a Cancel button (default) on the left and a Submit button (primary) on the right.</li>
+  <li>Generally, is a good idea to provide a Cancel button in a form.</li>
+  <li>On modal windows, buttons appear at the bottom aligned to the right of the window.</li>
+  <li>Only use destroy buttons when removing an existing item.</li>
+  <li>Do not use destroy buttons for cancel actions. Use default buttons instead.</li>
+  <li>Buttons with icons are used only when the action is linked to that icon.</li>
+  <li>In general, button labels are verbs in infinitive without to. The label defines the specific action the button performs. For example:  submit, accept, update, delete, cancel, etc.</li>
+  <li>The more specific label the better. For example, in a form to sign up, the label of the submit primary button could be “Create account” or “Sign up”.</li>
+</ol>
+
+<p><img src="images/controls/buttons-usage.png" alt="Buttons usage example" /></p>
+
+<h3 id="references">References</h3>
+<ul>
+  <li><a href="https://uxplanet.org/primary-secondary-action-buttons-c16df9b36150">Primary and secondary action buttons</a></li>
+</ul>
+
+<h2 id="inputs">Inputs</h2>
+
+<h3 id="specification-10">Specification</h3>
+
+<p><img src="images/controls/input.png" alt="Input" /></p>
+
+<p><img src="images/controls/input-mandatory.png" alt="Input" /></p>
+
+<p><img src="images/controls/input-with-error.png" alt="Input" /></p>
+
+<p><img src="images/controls/input-with-units.png" alt="Input" /></p>
+
+<p><img src="images/controls/input-addon.png" alt="Input" /></p>
+
+<p><img src="images/controls/input-separation.png" alt="Input" /></p>
+
+<h3 id="usage-10">Usage</h3>
+
+<ol>
+  <li>Inputs size is a number of columns in the grid. Set the number of columns based on the expected length of the contents. For short contents, use a smaller input, for longer contents use a longer input.</li>
+  <li>In general, for all input fields, perform client side validations on blur event, that is, when the field loses the focus.</li>
+  <li>
+    <p>Align text inputs to the left and numeric inputs to the right.</p>
+
+    <p><img src="images/controls/example-numeric.png" alt="Input example" /></p>
+  </li>
+</ol>
+
+<h3 id="resources">Resources</h3>
+<ul>
+  <li><a href="https://www.nngroup.com/articles/form-design-placeholders/">Placeholders in Form Fields Are Harmful  </a></li>
+  <li><a href="https://github.com/BobKnothe/autoNumeric">AutoNumeric plugin</a>. Plugin for currency and numbers.</li>
+</ul>
+
+<h2 id="selects">Selects</h2>
+<p>Selects are drop down menus with a set of options.</p>
+
+<h3 id="specification-11">Specification</h3>
+<p><img src="images/controls/select.png" alt="" /></p>
+
+<h3 id="usage-11">Usage</h3>
+
+<p>Selects are useful because they conserve screen space and prevent users from entering erroneous data, since they only show legal choices.</p>
+
+<ol>
+  <li>Use selects when the number of options is between 4 and 20. For less than 4, buttons group or choice boxes may apply. For more than 20 (for example, when selecting a country) typeahead is preferred.</li>
+  <li>Set a default option whenever possible. If there is no default value set “Seleccionar…” (“Select…”) as default.</li>
+  <li>Set the length of the select field accordingly to the length of its contents.</li>
+</ol>
+
+<h2 id="references-1">References</h2>
+<ul>
+  <li><a href="https://uxplanet.org/ux-design-drop-downs-in-forms-c6943ec30037">UX Design: Drop Downs in Forms</a></li>
+</ul>
+
+<h2 id="typeahead">Typeahead</h2>
+<p>Typeahead fields allow the user to preview the results that match the query he introduced.</p>
+
+<h3 id="specification-12">Specification</h3>
+<p><img src="images/controls/dropdown.png" alt="" /></p>
+
+<h3 id="usage-12">Usage</h3>
+
+<ol>
+  <li>Use autocomplete when the number of options is large (&gt;20).</li>
+  <li>The length of the autocomplete field shall be similar to the expected length of its contents.</li>
+</ol>
+
+<p>There are two ways to configure typeahead:</p>
+
+<ol>
+  <li>
+    <p>As advanced select. It displays all the results that match the contents of the input box. When nothing has been typed it display all the items, so the user can scroll down and scan the whole list. It works like a select.</p>
+  </li>
+  <li>
+    <p>As autocomplete. It displays a set of suggestions (maximum 6) that match the query entered.</p>
+  </li>
+</ol>
+
+<h2 id="textareas">Textareas</h2>
+
+<h3 id="specification-13">Specification</h3>
+<p><img src="images/controls/textarea.png" alt="" /></p>
+
+<h4 id="textareas-with-counter">Textareas with counter</h4>
+<p><img src="images/controls/textarea-with-counter.png" alt="" /></p>
+
+<h3 id="usage-13">Usage</h3>
+<ol>
+  <li>The size of the text area shall correspond to the expected text length.</li>
+  <li>Counter shall decrease or increase on each change.</li>
+  <li>Change the status of the counter to warning when there are from 10 to 1 character remaining.</li>
+  <li>CHange the status of the counter to danger when there are no characters remaining.</li>
+  <li>Limit the number of characters with <code class="highlighter-rouge">maxlength</code> attribute.</li>
+  <li>Set a placehoder whenever possible.</li>
+</ol>
+
+<h2 id="dropdown-menus">Dropdown menus</h2>
+
+<h3 id="specification-14">Specification</h3>
+
+<p><img src="images/controls/dropdown.png" alt="" /></p>
+
+<h3 id="usage-14">Usage</h3>
+<ol>
+  <li>Use dropdown menus to group actions that are related in some logical way. For example, actions over a row in a table may be grouped in a dropdown menu.</li>
+  <li>The number of actions within a menu shall not be large (maximum ~6 items).</li>
+  <li>Avoid the need to use of scroll in a dropdown menu.</li>
+</ol>
+
+<h2 id="choices">Choices</h2>
+<p>Radio buttons are used when there is a list of two or more options that are mutually exclusive and the user must select exactly one choice</p>
+
+<h3 id="specification-15">Specification</h3>
+
+<p><img src="images/controls/choice.png" alt="" /></p>
+
+<h3 id="usage-15">Usage</h3>
+<ol>
+  <li>Order the options logically.</li>
+  <li>Options shall be mutually discriminatory.</li>
+  <li>Set a default option whenever possible.</li>
+  <li>If the number of options is larger than 5, think about using a select instead.</li>
+  <li>Always use the choice in a vertical list.</li>
+  <li>The label and the circle shall be both clickable.</li>
+</ol>
+
+<p>Choice buttons are preferred over button groups when the label is long.</p>
+
+<h3 id="references-2">References</h3>
+<ul>
+  <li><a href="https://uxplanet.org/radio-buttons-ux-design-588e5c0a50dc">Radio buttons UX Design</a></li>
+</ul>
+
+<h2 id="checkboxes">Checkboxes</h2>
+<p>Checkboxes are used when there are lists of options and the user may select any number of choices, including zero, one, or several.</p>
+
+<h3 id="specification-16">Specification</h3>
+
+<p><img src="images/controls/checkboxes.png" alt="" /></p>
+
+<h3 id="usage-16">Usage</h3>
+<ol>
+  <li>By default set the most common expected status (set or unset) on the checkbox.</li>
+  <li>The label and the box shall be both clickable.</li>
+</ol>
+
+<h3 id="references-3">References</h3>
+<ul>
+  <li><a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/">Checkboxes vs Radio buttons</a></li>
+</ul>
+
+<h2 id="switches">Switches</h2>
+
+<h3 id="specification-17">Specification</h3>
+
+<p><img src="images/controls/switches.png" alt="" /></p>
+
+<h3 id="usage-17">Usage</h3>
+<p>Switches are equivalent to checkboxes in touchable interfaces. Therefore use switches when the interface is expected to be used primarily on mobile and tablets.</p>
+
+<h2 id="button-groups">Button groups</h2>
+
+<h3 id="specification-18">Specification</h3>
+
+<p><img src="images/controls/button-group.png" alt="" /></p>
+
+<p><img src="images/controls/button-group-disabled.png" alt="" /></p>
+
+<p><img src="images/controls/button-group-checkbox.png" alt="" /></p>
+
+<h3 id="usage-18">Usage</h3>
+
+<p>Use button groups when the following conditions are satisfied:</p>
+
+<ol>
+  <li>Button labels are short. If they are long you may use a select or choice boxes.</li>
+  <li>The number of options is more than one and less than 4 or 5. If there is only one option, use a switch or a checkbox. If there are more than 5 options use a select or a typeahead input.</li>
+  <li>The number of options is not expected to grow with time. If you expect this options to growth with time, a select may be easier to maintain.</li>
+</ol>
+
+<p><img src="images/controls/example-button-group-vs-choices.png" alt="Button groups vs Choices" /></p>
+
+<h2 id="breadcrumbs">Breadcrumbs</h2>
+<p>Breadcrumbs (or breadcrumb trail) is a secondary navigation system that shows a user’s location in a site or web app.</p>
+
+<h3 id="specification-19">Specification</h3>
+<p><img src="images/controls/breadcrumbs.png" alt="" /></p>
+
+<h3 id="usage-19">Usage</h3>
+<ol>
+  <li>Use breadcrumbs when you have a large amount of content organized in a strict linear structure or hierarchical structure with defined categories (e.g. can be partitioned into sections which can be divided into more subsections). Don’t use breadcrumbs for single-level applications that have no logical hierarchy or grouping.</li>
+  <li>The first item of the breadcrumbs is the home page of the application.</li>
+  <li>Last item of the breadcrumbs is the current page. Do not add a link to this item.</li>
+</ol>
+
+<h3 id="references-4">References</h3>
+<ul>
+  <li><a href="https://uxplanet.org/breadcrumbs-for-web-sites-what-when-and-how-9273dacf1960">Breadcrumbs For Web Sites: What, When and How</a></li>
+  <li><a href="https://www.nngroup.com/articles/breadcrumb-navigation-useful/">Breadcrumb Navigation Increasingly Useful</a></li>
+</ul>
+
+<h2 id="tabs">Tabs</h2>
+
+<h3 id="specification-20">Specification</h3>
+
+<p><img src="images/controls/tabs.png" alt="" /></p>
+
+<h3 id="usage-20">Usage</h3>
+<ol>
+  <li>Do not use more than six tabs.</li>
+  <li>Use short names on tabs.</li>
+  <li>Only one tab can be active at the same time.</li>
+  <li>Order tabs in a way that makes sense for the user.</li>
+  <li>Tabs cannot be nested.</li>
+</ol>
+
+<h3 id="references-5">References</h3>
+<ul>
+  <li><a href="https://www.nngroup.com/articles/tabs-used-right/">Tabs, used right</a></li>
+  <li><a href="http://usabilitygeek.com/14-guidelines-for-web-site-tabs-usability/">14 Guidelines For Web Site Tabs Usability</a></li>
+  <li><a href="https://material.google.com/components/tabs.html#tabs-usage">Material design tabs</a></li>
+</ul>
+
+<h2 id="tables">Tables</h2>
+
+<h3 id="specification-21">Specification</h3>
+
+<p><strong>Main table</strong></p>
+
+<p><img src="images/tables/main.png" alt="Main table" /></p>
+
+<p><strong>Secondary table</strong>
+<img src="images/tables/secondary.png" alt="Secondary table" /></p>
+
+<h3 id="usage-21">Usage</h3>
+
+<ul>
+  <li>
+    <p><strong>Column order</strong></p>
+
+    <p><img src="images/tables/col-organization.png" alt="Column organization" /></p>
+
+    <ul>
+      <li>In general, the order of the columns goes from most important for the user on the left to least important.</li>
+      <li>Ids should be at the leftmost column.</li>
+      <li>Amounts such as price or quantity are placed on the right.</li>
+      <li>Related columns should be next to each others</li>
+      <li>Text columns are aligned to the left. Numeric columns are aligned to the right.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Optimization of horizontal space.</strong> Sometimes tables have too many columns which take more than the horizontal space available.  In those cases, to avoid horizontal scroll (specially on mobile devices) merge several cols in one. In order to do this, the data of the cols should be univocally identified. In the example below, the order number and the date have been merged with the order description. Also the status of the order was merged in one column.</p>
+
+    <p><img src="images/tables/with-double-line.png" alt="Table with optimized space" /></p>
+  </li>
+  <li>
+    <p><strong>Headless tables</strong> Table head can be skipped if fields are extremely clear for the user. Using this option, the interface is much cleaner. To be sure the data is comprehended, tooltips can be added.
+<img src="images/tables/headless.png" alt="Headless table" /></p>
+  </li>
+</ul>
+
+<p>Note that some tables, specially headless tables can be implemented using <code class="highlighter-rouge">div</code> elements instead of using <code class="highlighter-rouge">table</code>. This should be taken into account specially in fully responsive designs.</p>
+
+<h2 id="accordions">Accordions</h2>
+<p>Accordions allow the user to display additional information without losing current context.</p>
+
+<h3 id="specification-22">Specification</h3>
+
+<p><img src="images/tables/accordion-collapsed.png" alt="Accordion collapsed" /></p>
+
+<p><img src="images/tables/accordion.png" alt="Accordion" /></p>
+
+<h3 id="usage-22">Usage</h3>
+
+<p>Accordions are suitable when people need only a few key pieces of content on a single page. By hiding most of the content, users can spend their time more efficiently focused on the few topics that matter.</p>
+
+<p>Accordions should be avoided when users need most or all of the content on the page to answer their questions. Better to show all page content at once when the use case supports it.</p>
+
+<ol>
+  <li>Content displayed after uncollapsing shall not be very long.</li>
+  <li>In general, user should be able two see two or more accordions uncollapsed at the same time.</li>
+</ol>
+
+<p>For asynchronously (AJAX) loaded data, please refer to the <strong>Asynchronous</strong> section on this document.</p>
+
+<h3 id="references-6">References</h3>
+<ul>
+  <li><a href="https://www.nngroup.com/articles/accordions-complex-content/">Accordions for complex content</a></li>
+</ul>
+
+<h1 id="mobile-lists">Mobile lists</h1>
+
+<h3 id="specification-23">Specification</h3>
+<p><img src="images/tables/mobile-list-1.png" alt="Mobile lists" />
+<img src="images/tables/mobile-list-2.png" alt="Mobile lists" />
+<img src="images/tables/mobile-list-3.png" alt="Mobile lists" /></p>
+
+<h3 id="usage-23">Usage</h3>
+
+<p>In mobile applications it is not recommended the usage of table elements. Instead, use the mobile list.</p>
+
+<ol>
+  <li>
+    <p>Mobile list may have a search input box at the top to facilitate the search when the number of items is, in general, large (&gt; 50).</p>
+  </li>
+  <li>
+    <p>Each element of the list is a link. The linkable area is the whole item. The link is displayed in a new page.</p>
+  </li>
+  <li>
+    <p>If there is an accordion linked to the item, the information is shown on the same page as in regular accordions.</p>
+  </li>
+</ol>
+
+<h2 id="modal-windows">Modal windows</h2>
+
+<h3 id="specification-24">Specification</h3>
+
+<p><img src="images/modals/modal.png" alt="Modal" /></p>
+
+<h3 id="usage-24">Usage</h3>
+
+<ol>
+  <li>Set a short but significative title. If the modal is a question do not set the question on the title.</li>
+  <li>Set a label with specific action performed by each button at the bottom. For example, avoid generic answers such as “Yes”, “No”, “Accept”, “Ok” and use specific actions as “Update”, “Delete”, “Confirm”.
+  <img src="images/modals/example.png" alt="Modal" /></li>
+</ol>
+
+<p>Avoid the overuse of modal windows, specially, modals are not recommended for mobile and tablet interfaces. Modal windows break the flow of the user, becoming annoying if they appear too often. Therefore they shall be used wisely.</p>
+
+<p>Modal windows are a good option when:</p>
+<ol>
+  <li>The content or the form is not large</li>
+  <li>Do not want to lose current context</li>
+  <li>The attention of the user us required.</li>
+</ol>
+
+<h3 id="references-7">References</h3>
+<ul>
+  <li><a href="https://www.nngroup.com/articles/overuse-of-overlays/">Overuse of Overlays: How to Avoid Misusing Lightboxes</a></li>
+</ul>
+
+<h2 id="desktop-header-and-menu">Desktop header and menu</h2>
+
+<h3 id="specification-25">Specification</h3>
+
+<p><img src="images/menus/desktop.png" alt="Desktop menu" /></p>
+
+<p><img src="images/menus/dropdown.png" alt="Desktop dropdown" /></p>
+
+<p><img src="images/menus/dropdown-user.png" alt="Desktop dropdown user" /></p>
+
+<h3 id="usage-25">Usage</h3>
+
+<ol>
+  <li>The header shall be always visible (fixed position)</li>
+  <li>Organize dropdown options on a logical way and follow the principles defined in the Labeling section.</li>
+</ol>
+
+<h2 id="mobile-header-and-menu">Mobile header and menu</h2>
+
+<h3 id="specification-26">Specification</h3>
+
+<h4 id="mobile-tabs">Mobile Tabs</h4>
+<p><img src="images/menus/mobile-tabs.png" alt="Mobile menu" /></p>
+
+<h4 id="navigation-bar">Navigation bar</h4>
+<p><img src="images/menus/mobile-navigation-first.png" alt="Mobile navigation first" /></p>
+
+<p><img src="images/menus/mobile-navigation.png" alt="Mobile navigation" /></p>
+
+<h4 id="static-footer">Static footer</h4>
+<p><img src="images/menus/mobile-footer.png" alt="Mobile navigation" /></p>
+
+<h3 id="usage-26">Usage</h3>
+
+<ol>
+  <li>
+    <p>Mobile header is always visible (fixed position). Static footer too.</p>
+  </li>
+  <li>
+    <p>Navigation bar works as a regular stack (first in, first out). When user accesses a new page, the previous page is pushed to the stack of the navigation bar. If an user goes back, that page is pulled back from that stack and displayed.</p>
+  </li>
+</ol>
+
+<h2 id="off-canvas-menu">Off-canvas menu</h2>
+<p>User can browser in a linear way using the navigation bar going back and forth using the links and the back button. However, if he needs to go to different sections of the application, we use the Off-canvas menu.</p>
+<h3 id="specification-27">Specification</h3>
+
+<p><img src="images/menus/mobile-offcanvas.png" alt="Mobile offcanvas" /></p>
+
+<h3 id="usage-27">Usage</h3>
+<ol>
+  <li>Use it when there are too many options that cannot be displayed on tabs.</li>
+  <li>Organize the different related menu items in sections grouped logically. Use unambiguous labels in sections (see labeling recommendations).</li>
+</ol>
+
+<h2 id="form-layouts">Form layouts</h2>
+
+<h4 id="regular-form">Regular form</h4>
+<p><img src="images/layouts/regular-form.png" alt="Form layout" /></p>
+
+<h4 id="search-form">Search form</h4>
+<p><img src="images/layouts/search-form.png" alt="Form layout" /></p>
+
+<h4 id="calculator-forms">Calculator forms</h4>
+<p><img src="images/layouts/calculator-form.png" alt="Form layout" /></p>
+
+<h2 id="form-design-guidelines">Form design guidelines</h2>
+
+<ol>
+  <li>
+    <p>Mark mandatory fields with a bold label. Optional fields is recommended to be marked adding the <em>‘(optional)’</em> text to the label.</p>
+
+    <p><img src="images/controls/input-mandatory.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Order fields logically and those fields related appear together. For example, contact information appears together (address, zip code, country, phone, etc.)</p>
+  </li>
+  <li>
+    <p>Mandatory fields shall appear at the beginning of each logical section of the form. Optional fields at the end.</p>
+
+    <p><img src="images/controls/example-optional.png" alt="Mandatory and optional" /></p>
+  </li>
+  <li>
+    <p>In long forms, use headers to separate the different logical areas.</p>
+  </li>
+  <li>
+    <p>In general, forms only have one field per row, so user can fill the fields sequentially.</p>
+
+    <p><img src="images/form-design.jpeg" alt="1 field per row" /></p>
+  </li>
+  <li>
+    <p>Several fields per row are used in applications in which results are displayed in the same page as the form such as calculators or search forms. On these cases, maximize the number of fields and information that is displayed in the screen avoiding scroll between form and results whenever possible.</p>
+  </li>
+  <li>
+    <p>Do not modify, show or hide fields above the current one. If a field conditions the state of another, locate this second field after the first one.</p>
+
+    <p><img src="images/controls/example-linked-fields.png" alt="Linked fields" /></p>
+  </li>
+  <li>
+    <p>In a form, request only the minimum information required. If the system can infer a value do not ask for it on the form.</p>
+
+    <p><img src="images/controls/example-inferred.png" alt="Inferred" /></p>
+  </li>
+  <li>
+    <p>Hide or disable a field? Keep hidden the fields that are only required for exceptional cases. Disable fields that are displayed on the default form view, but do not apply for the current selected options.</p>
+
+    <p><img src="images/controls/show-hide-form.png" alt="Hide or disable" /></p>
+  </li>
+  <li>
+    <p>Provide a default value whenever possible. For example, if the majority of your users live in Panama and you request its shipping address, you can set Panama as default country and province (as ~50% of the country population lives in that province).</p>
+  </li>
+  <li>
+    <p>Include a placeholder with an example. For example, in a phone number you can place the expected format.</p>
+  </li>
+  <li>
+    <p>Prevent the user from making an error. For example, in numeric fields do not allow to type letters or symbols. If the field has a particular format such as a credit card or an id number, set a mask.</p>
+  </li>
+</ol>
+
+<h4 id="example">Example</h4>
+<p><img src="images/controls/form-example.png" alt="Control" /></p>
+
+<h3 id="references-8">References:</h3>
+<ul>
+  <li><a href="https://uxplanet.org/designing-more-efficient-forms-assistance-and-validation-f26a5241199d">Designing More Efficient Forms: Assistance and Validation</a></li>
+  <li><a href="https://uxplanet.org/designing-perfect-text-field-clarity-accessibility-and-user-effort-d03c1e26004b#.908st6zko">Designing Perfect Text Field: Clarity, Accessibility and User Effort</a></li>
+  <li><a href="https://uxplanet.org/10-rules-for-efficient-form-design-e13dc1fb0e03">10 Rules For Efficient Form Design</a></li>
+</ul>
+
+<h2 id="labeling">Labeling</h2>
+<p>Labeling refers to the texts that identify the action a button performs, the name of a field or the menus title. Selecting a good label is one of the most difficult processes of defining an interface.</p>
+
+<ol>
+  <li><strong>Labels shall be short</strong>. Users do not like reading. For example: instead of <em>“Work opportunities”</em> it shall be used just <em>“Jobs”</em>.</li>
+  <li><strong>Labels shall be specific</strong>. The more specific the better. For example: In a modal window that confirm the removal of an item, instead of <em>“Cancel”</em> and <em>“Accept”</em> it is better to use <em>“Cancel”</em> and <em>“Delete”</em>. As delete is more specific and indicates the user the concrete action the button performs.</li>
+  <li><strong>Labels shall be unambiguous</strong>. For example, if the user is looking for canned beans and the sections are <em>“Meat”</em> and <em>“Vegetables”</em> there is no ambiguity that he will find the beans on the <em>“Vegetables”</em> section. But if the sections are <em>“Processed food”</em> and <em>“Cans”</em> he may access any of them.</li>
+  <li><strong>Labels shall be consistent</strong>. Within each application and across all the applications of Ubiqua. For example, if in an application it is used “Sign out” to leave the app, it shall not be used “Exit” or “Log out” others.</li>
+  <li><strong>Labels shall be adapted to the user language</strong>. Avoid technical stuff and use labels a regular user would understand.</li>
+  <li><strong>Use positive sentences wording</strong>. It’s easier for the user to understand a positive sentence than a negative one. For example, avoid negations such as “Don’t send me more email,” which would mean that the user would have to check the box in order for something not to happen.</li>
+  <li><strong>Capitalize only the first letter of the first word</strong>. Example: “Create user”, “Zip code”. Exceptions to this rule are acronyms (which should be avoided).</li>
+  <li><strong>Avoid acronyms and abreviatures</strong> Example: “Name and surn.”</li>
+</ol>
+
+<h2 id="errors">Errors</h2>
+<p>In general, <strong>the interface shall be designed to prevent the user to make a mistake</strong>. For example, if in a textarea the user can only type up to 200 characters, instead of allowing the user to type any amount of characters and displaying an error when he types more that 140 characters. A good interface would limit the number of characters the user can type. Additionally, the interface could display the number of characters remaining, providing this way a better feedback of the status.</p>
+
+<p><img src="images/controls/textarea-with-counter.png" alt="Textarea example" /></p>
+
+<p>Error shall follow the same rules of labeling, they shall be short, specific, unambiguous, consistent across the interface and adapted to the user language (human readable).  Examples of bad error messages:<em>“An error of type 2 has occurred”,”Illegal command”,”Syntax error”</em></p>
+
+<p>Errors should include:</p>
+
+<ol>
+  <li>an explicit indication of what went wrong</li>
+  <li>and some guide to help the user to recover from the error.</li>
+</ol>
+
+<p>Examples: <em>‘Incorrect email, it should look like user@example.com’, ‘Sundays are not allowed, select another day of the week’</em> or <em>‘Out of range. Maximum is 500’</em>.</p>
+
+<p>When the space to place the error is small, for instance, in errors shown under a field. Instead of telling the user what happened, focus on telling the user how to recover from it. For example: <em>‘Set any day except Sunday’</em>, <em>‘Maximum is 500’</em>.</p>
+
+<p><img src="images/controls/example-error-informative.png" alt="Error" /></p>
+
+<h3 id="field-validation">Field validation</h3>
+
+<p>There are two points that validations shall be done:</p>
+
+<ol>
+  <li>Validation of the field after editing on blur, that is, when the field loses the focus.</li>
+  <li>Validation on submit, that is, when de user wants to continue to the next step.</li>
+</ol>
+
+<p>Whereas the first validation is related with format and syntax of a field, the second validation is related with business rules, a field may be syntactically correct, but because of the status of the system cannot have that value. For example, during sign up, a user tries to create an already existing username. However, on this cases, whenever possible it is better to perform the validation also on blur. On the previous example, the system can check if the user exist via javascript on blur.</p>
+
+<h3 id="resources-1">Resources</h3>
+<ul>
+  <li><a href="https://www.nngroup.com/articles/error-message-guidelines/">Error message guidelines</a></li>
+</ul>
+
+<h2 id="full-screen-asynchronous-feedback">Full Screen asynchronous feedback</h2>
+
+<h3 id="specification-28">Specification</h3>
+
+<p><img src="images/async/full-screen.png" alt="Async full screen load" /></p>
+
+<h3 id="usage-28">Usage</h3>
+<p>Provide this feedback when loading or changing all the information on the screen or the action that is being performed may take a long time.</p>
+
+<h3 id="references-9">References</h3>
+<ul>
+  <li><a href="http://projects.lukehaas.me/css-loaders/">CSS Loaders</a>, example of implementation.</li>
+</ul>
+
+<h2 id="data-process-asynchronous-feedback">Data process asynchronous feedback</h2>
+
+<p><img src="images/async/desktop-load-data.png" alt="Async data load" /></p>
+
+<p><img src="images/async/mobile-load-data.png" alt="Async data load" /></p>
+
+<h3 id="usage-29">Usage</h3>
+<p>This asynchronous feedback is displayed when some data is being loaded, saved, updated on
+the current page. For example, if the data of an accordion has to be loaded from the server, this visual feedback shall be displayed.</p>
+
+<h3 id="references-10">References</h3>
+<ul>
+  <li><a href="http://ricostacruz.com/nprogress/">Ngprogress</a>, an example of implementation of this feedback.</li>
+</ul>
+
+<h2 id="examples-and-layouts-of-complete-pages">Examples and layouts of complete pages</h2>
+
+<h3 id="desktop-login">Desktop login</h3>
+
+<h4 id="layout">Layout</h4>
+<p><img src="images/layouts/login.png" alt="Layout" /></p>
+
+<h4 id="example-1">Example:</h4>
+<p><img src="images/examples/1-desktop-login.png" alt="Example" /></p>
+
+<h3 id="desktop-search-form">Desktop search form</h3>
+
+<h4 id="layout-1">Layout</h4>
+<p><img src="images/layouts/search-form.png" alt="Layout" /></p>
+
+<h5 id="example-2">Example:</h5>
+<p><img src="images/examples/2-search.png" alt="Example" /></p>
+
+<h3 id="desktop-product">Desktop product</h3>
+
+<h4 id="layout-2">Layout</h4>
+<p><img src="images/layouts/product.png" alt="Layout" /></p>
+<h4 id="example-3">Example</h4>
+<p><img src="images/examples/3-desktop-product.png" alt="Example" /></p>
+
+<h3 id="desktop-modal-window">Desktop modal window</h3>
+<p><img src="images/examples/4-modal.png" alt="Example" /></p>
+
+<h3 id="mobile-login">Mobile login</h3>
+<p><img src="images/examples/mobile-1-login.png" alt="Example" /></p>
+
+<h3 id="mobile-product-list">Mobile product list</h3>
+<p><img src="images/examples/mobile-2-product.png" alt="Example" /></p>
+
+<h3 id="mobile-flow">Mobile flow</h3>
+<p><img src="images/examples/mobile-1-list.png" alt="Example" />
+<img src="images/examples/mobile-2-customers.png" alt="Example" />
+<img src="images/examples/mobile-3-product.png" alt="Example" />
+<img src="images/examples/mobile-4-list.png" alt="Example" /></p>
+
+        </div>
+
+      </div>
+    </div>
+
+  
+  </body>
+
+</html>
